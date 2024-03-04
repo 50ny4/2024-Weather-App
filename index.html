@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="search-form">
+            <form id="search">
+                <input type="search" id="enter-city" autocomplete="off" autofocus="on" placeholder="Search city">
+
+            </form>
+            <!-- <button type="button" class="btn btn-outline-primary">Go</button> -->
+        </div>
+
+        <div id="city">
+            <h3 id="city-name">
+
+            </h3>
+        </div>
+
+
+
+        <div id="nested-forecast">
+            <span class="forcast-day1">Monday
+                <img src="img/day_clear.png" alt="" class="forecast-img">
+                <span class="forecast-degree">24℃</span>
+            </span>
+            <span class="forcast-day2">Tuesday
+                <img src="img/day_clear.png" alt="" class="forecast-img">
+                <span class="forecast-degree">24℃</span>
+            </span>
+            <span class="forcast-day3">Wednesday
+                <img src="img/day_clear.png" alt="" class="forecast-img">
+                <span class="forecast-degree">24℃</span>
+            </span>
+            <span class="forcast-day4">Thursday
+                <img src="img/day_clear.png" alt="" class="forecast-img">
+                <span class="forecast-degree">24℃</span>
+            </span>
+            <span class="forcast-day5">Friday
+                <img src="img/day_clear.png" alt="" class="forecast-img">
+                <span class="forecast-degree">24℃</span>
+            </span>
+        </div>
+        <div class="main-img">
+            <img src="img/day_clear.png" alt="sun" class="img-icon">
+        </div>
+        <div class="set-rise">
+            <ul>
+                <li>
+                    Sunset: 06:12PM
+                </li>
+                <li>
+                    Sunrise: 06:48am
+                </li>
+            </ul>
+            <!-- <span class="sunset">Sunset 06:45pm
+        <span class="sunset">Sunrise 06:am</span>
+      </span> -->
+        </div>
+        <div class="main-temp">
+            <span class="temp"></span>
+        </div>
+        <div class="wph">
+            <ul>
+                <li>
+                    Wind: 12%
+                </li>
+                <li>
+                    Humidity: 2%
+                </li>
+                <li>
+                    Precipitation: 36%
+                </li>
+            </ul>
+            <!-- <div class="wind">Wind: 4mph</div>
+      <div class="humid">Humidity: 26%</div>
+      <div class="prec"> Precipitation: 2% </div> -->
+
+        </div>
+        <div id="todays-date">
+            <h5 id="date">
+                Date</h5>
+
+        </div>
+        <div class="nested-today">
+            <span class="today-time1">12PM
+                <img src="img/day_rain_thunder.png" class="today-img">
+                <span class="today-degree">11℃</span>
+            </span>
+            <span class="today-time2">12PM
+                <img src="img/day_rain_thunder.png" class="today-img">
+                <span class="today-degree">11℃</span>
+            </span>
+            <span class="today-time3">12PM
+                <img src="img/day_rain_thunder.png" class="today-img">
+                <span class="today-degree">11℃</span>
+            </span>
+            <span class="today-time4">12PM
+                <img src="img/day_rain_thunder.png" class="today-img">
+                <span class="today-degree">11℃</span>
+            </span>
+            <span class="today-time5">12PM
+                <img src="img/day_rain_thunder.png" class="today-img">
+                <span class="today-degree">11℃</span>
+            </span>
+        </div>
+    </div>
+
+
+
+
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>

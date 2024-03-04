@@ -1,0 +1,144 @@
+.container {
+  display: grid;
+  gap: 8px;
+  margin-top: 100px;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  background-color: rgba(237, 237, 239, 0.923);
+}
+
+.container div {
+  padding: 10px;
+  /* border: 1px lightblue solid; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nested-forecast {
+  display: grid;
+  grid-gap: 5px;
+  grid-row: 1/5;
+  text-align: center;
+}
+
+.forecast-img {
+  width: 45px;
+  display: block;
+  margin: 0 auto;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.forcast-day1,
+.forcast-day2,
+.forcast-day3,
+.forcast-day4,
+.forcast-day5 {
+  border: 1px solid lightblue;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.search {
+  grid-column: 1/1;
+}
+
+.search-btn {
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid lightblue;
+}
+
+#city {
+  grid-column: 2/4;
+  font-size: 30px;
+  text-align: center;
+}
+
+#enter-city {
+  border-radius: 5px;
+  border-color: lightblue;
+  box-shadow: none;
+}
+
+.set-rise ul,
+.wph ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.set-rise {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: grid;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.wph {
+  grid-column: 1/2;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.main-img {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  border-right: lightblue 2px solid;
+  align-items: center;
+}
+
+.img-icon {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main-temp {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: inline-grid;
+  text-align: center;
+  align-items: center;
+}
+
+.temp {
+  font-size: 50px;
+}
+
+#todays-date {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  display: grid;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nested-today {
+  display: grid;
+  grid-gap: 5px;
+  grid-column: 1/4;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+.today-img {
+  width: 35px;
+  display: block;
+  margin: 0 auto;
+}
+
+.today-time1,
+.today-time2,
+.today-time3,
+.today-time4,
+.today-time5 {
+  border: 1px solid lightblue;
+  padding: 10px;
+  border-radius: 8px;
+}
